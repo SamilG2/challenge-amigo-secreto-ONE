@@ -20,3 +20,14 @@ function agregarAmigo() {
     }
 
 }
+
+function sortearAmigo() {
+    if(amigos !=0) {
+        let amigoSecreto = amigos[Math.floor(Math.random() * amigos.length)];
+        let resultado = document.getElementById("resultado");
+        resultado.innerHTML = "El amigo secreto es: " + amigoSecreto;
+        amigos = [];        
+    } else {
+        alert("No hay amigos para sortear.");
+    }
+}
